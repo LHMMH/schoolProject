@@ -10,19 +10,21 @@ import 'vue-awesome-swiper'
 import Mint  from 'mint-ui';
 import VueVideoPlayer from 'vue-video-player'
 import { baseLiveAjaxUrl,baseImgUrl,appId,baseAjaxUrl,baseThirdServiceUrl,baseWsUrl } from "../static/js/config/base-config.js";
-//修改处开始
+import '../static/css/base.less'
+import '../static/css/viewportBase.less'
+import 'vue-awesome/icons'
+import Icon from 'vue-awesome/components/Icon'
+
 import { Cell } from 'mint-ui';
 import { Navbar, TabItem } from 'mint-ui';
 import { Checklist } from 'mint-ui';
 
-
+Vue.component('icon',Icon)
 Vue.component(Cell.name, Cell);
 Vue.component(Navbar.name, Navbar);
 Vue.component(TabItem.name, TabItem);
 Vue.component(Checklist.name, Checklist);
 
-
-//修改处结束
 Vue.use(Mint);
 Vue.use(VueAwesomeSwiper);
 Vue.use(VueVideoPlayer);
@@ -34,5 +36,5 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
+  components: { App,Icon}
 })

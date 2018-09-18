@@ -1,5 +1,5 @@
 <template>
-	<div class="index">
+	<div class="PersonalIndex">
 		<div class="banner">
 			<img :src="img"/>
 			<p class="name">张跃栊</p>
@@ -60,53 +60,53 @@ export default {
 </script>
 
 <style scoped>
-.index {
+.PersonalIndex {
 	background-color: #eef2f5;
 	width: 100%;
 	min-height: 100%;
 }
-.index .banner {
+.PersonalIndex .banner {
 	background-image: url(../../assets/img/banner.png);
 	width: 100%;
 	height: 18rem;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
-.index .banner img {
+.PersonalIndex .banner img {
 	width: 20%;
 	margin-left: 40%;
 	margin-top: 2rem;
 	border-radius: 50%;
 }
-.index .banner p {
+.PersonalIndex .banner p {
 	color: #FFFFFF;
 	text-align: center;
 }
-.index .banner p.name {
+.PersonalIndex .banner p.name {
 	font-size: 2rem;
 }
-.index .banner p.number {
+.PersonalIndex .banner p.number {
 	font-size: 1rem;
 }
 
-.index .tab {
+.PersonalIndex .tab {
 	width: 100%;
 	height: 12rem;
 	background-color: #FFFFFF;
 	margin-bottom: 0.5rem;
 }
-.index .tab>div {
+.PersonalIndex .tab>div {
 	width: 25%;
 	height: 100%;
 	float: left;
 	text-align: center;
 	color: #666666;
 }
-.index .tab>div img {
+.PersonalIndex .tab>div img {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 }
-.index .tab>div p {
+.PersonalIndex .tab>div p {
 	font-size: 1.5rem;
 }
 .mint-cell:nth-child(1) {

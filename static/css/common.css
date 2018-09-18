@@ -9,6 +9,9 @@ html, body
   background: #fff;
   height: 100%;
 }
+body, button, input, select, textarea {
+  font-size: 28px;
+}
 
 li {
     list-style: none;
@@ -25,5 +28,7 @@ a {
     padding: 0px;
 }
 
-input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; } 
-.clear{clear: both;};
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; }
+.clear{clear: both;}
+
+
